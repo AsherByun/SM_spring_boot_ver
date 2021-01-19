@@ -23,4 +23,9 @@ public class Board {
 	@ManyToOne
 	@JoinColumn(name = "id",nullable = false)
 	private User user;
+	
+	public void setUser(User user) {
+		this.user = user;
+		user.getBoard().add(this);
+	}
 }

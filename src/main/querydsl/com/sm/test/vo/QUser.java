@@ -28,6 +28,8 @@ public class QUser extends EntityPathBase<User> {
 
     public final StringPath name = createString("name");
 
+    public final StringPath password = createString("password");
+
     public final StringPath role = createString("role");
 
     public QUser(String variable) {
